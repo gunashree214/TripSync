@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>TripSync | Plan Your Perfect Journey</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ✈️ <span>Trip</span>Sync
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="explore.html">Explore</a>
+
+            <a href="planner.html">Plan Trip</a>
+
+            <a href="saved-trips.html">My Trips</a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="register.html" class="signup-btn">
+                Get Started
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ✨ Smart travel planning made simple
+                </div>
+
+                <h1>
+                    Your journey.
+                    <br>
+                    <span>Perfectly planned.</span>
+                </h1>
+
+                <p>
+                    Discover destinations, create personalized itineraries,
+                    manage your budget and make every trip unforgettable.
+                </p>
+
+
+                <!-- QUICK TRIP SEARCH -->
+
+                <div class="trip-search-card">
+
+                    <div class="search-field">
+
+                        <span class="field-icon">📍</span>
+
+                        <div>
+                            <small>Where to?</small>
+                            <input
+                                type="text"
+                                id="destination"
+                                placeholder="Enter destination">
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-field">
+
+                        <span class="field-icon">📅</span>
+
+                        <div>
+                            <small>When?</small>
+                            <input
+                                type="date"
+                                id="travelDate">
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-field">
+
+                        <span class="field-icon">👥</span>
+
+                        <div>
+                            <small>Travelers</small>
+
+                            <select id="travelers">
+
+                                <option value="1">
+                                    1 Traveler
+                                </option>
+
+                                <option value="2">
+                                    2 Travelers
+                                </option>
+
+                                <option value="3">
+                                    3 Travelers
+                                </option>
+
+                                <option value="4">
+                                    4 Travelers
+                                </option>
+
+                                <option value="5">
+                                    5+ Travelers
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="plan-btn"
+                        onclick="startPlanning()">
+
+                        ✨ Plan My Trip
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="floating-card card-one">
+                    🌴
+                    <div>
+                        <strong>Goa</strong>
+                        <small>Beach Escape</small>
+                    </div>
+                </div>
+
+
+                <div class="floating-card card-two">
+
+                    ⭐ 4.9
+
+                    <div>
+                        <strong>Happy Travelers</strong>
+                        <small>TripSync community</small>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-circle">
+
+                    <div class="travel-icon">
+                        ✈️
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features-section">
+
+            <div class="section-heading">
+
+                <span>WHY TRIPSYNC?</span>
+
+                <h2>
+                    Everything you need for
+                    <br>
+                    a better journey.
+                </h2>
+
+                <p>
+                    Plan, organize and enjoy your trip from one place.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ✨
+                    </div>
+
+                    <h3>Smart Trip Planner</h3>
+
+                    <p>
+                        Create personalized itineraries
+                        based on your destination,
+                        budget and interests.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🗺️
+                    </div>
+
+                    <h3>Explore Destinations</h3>
+
+                    <p>
+                        Discover beautiful places,
+                        hidden gems and exciting
+                        experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💰
+                    </div>
+
+                    <h3>Smart Budgeting</h3>
+
+                    <p>
+                        Track your travel expenses
+                        and stay within your planned
+                        budget.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎒
+                    </div>
+
+                    <h3>Packing Assistant</h3>
+
+                    <p>
+                        Get a personalized packing
+                        checklist based on your trip.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POPULAR DESTINATIONS ================= -->
+
+        <section class="destinations-section">
+
+            <div class="section-heading destination-heading">
+
+                <div>
+
+                    <span>EXPLORE</span>
+
+                    <h2>
+                        Popular destinations
+                    </h2>
+
+                </div>
+
+                <a href="explore.html">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div class="destination-grid">
+
+                <div class="destination-card">
+
+                    <div class="destination-image goa">
+
+                        <span class="destination-tag">
+                            🏖️ Beach
+                        </span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <h3>Goa</h3>
+
+                        <p>Beaches • Nightlife • Adventure</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="destination-card">
+
+                    <div class="destination-image manali">
+
+                        <span class="destination-tag">
+                            🏔️ Mountains
+                        </span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <h3>Manali</h3>
+
+                        <p>Snow • Adventure • Nature</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="destination-card">
+
+                    <div class="destination-image kerala">
+
+                        <span class="destination-tag">
+                            🌿 Nature
+                        </span>
+
+                    </div>
+
+                    <div class="destination-info">
+
+                        <h3>Kerala</h3>
+
+                        <p>Backwaters • Nature • Culture</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div>
+
+                <span>READY TO EXPLORE?</span>
+
+                <h2>
+                    Your next adventure
+                    <br>
+                    starts here.
+                </h2>
+
+                <p>
+                    Create your personalized travel plan
+                    in just a few clicks.
+                </p>
+
+            </div>
+
+            <a href="planner.html" class="cta-button">
+                Start Planning ✨
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ✈️ TripSync
+        </div>
+
+        <p>
+            Plan less. Explore more.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="explore.html">Explore</a>
+
+            <a href="planner.html">Plan Trip</a>
+
+            <a href="profile.html">Profile</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 TripSync. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

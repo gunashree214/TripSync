@@ -1,0 +1,283 @@
+/* ================================
+   TRIPSYNC PLANNER
+   ================================ */
+
+.planner-header{
+    padding:65px 7% 45px;
+    background:linear-gradient(135deg,#f8fcfd,#eaf7f6);
+}
+
+.planner-header span{
+    color:#12a89f;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.planner-header h1{
+    font-family:Poppins,sans-serif;
+    font-size:46px;
+    line-height:1.2;
+    margin:10px 0;
+}
+
+.planner-header h1 span{
+    color:#12a89f;
+    font-size:inherit;
+    letter-spacing:0;
+}
+
+.planner-header p{
+    color:#687386;
+    font-size:15px;
+    max-width:600px;
+}
+
+
+/* MAIN */
+
+.planner-container{
+    padding:60px 7% 90px;
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:30px;
+    background:#f6f9fc;
+}
+
+
+/* FORM CARD */
+
+.planner-card{
+    background:#fff;
+    padding:35px;
+    border:1px solid #e5ebf0;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(30,48,70,.07);
+}
+
+.planner-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.planner-icon{
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#e3f7f5;
+    border-radius:15px;
+    font-size:23px;
+}
+
+.planner-title h2{
+    font-family:Poppins,sans-serif;
+    font-size:22px;
+}
+
+.planner-title p{
+    color:#8993a4;
+    font-size:13px;
+}
+
+
+/* FORM */
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:8px;
+    color:#344054;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #dce3e9;
+    border-radius:10px;
+    outline:none;
+    background:#fff;
+    color:#344054;
+    font-size:13px;
+    transition:.25s;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#12a89f;
+    box-shadow:0 0 0 3px rgba(18,168,159,.1);
+}
+
+
+/* INTERESTS */
+
+.interest-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.interest-btn{
+    padding:12px 8px;
+    border:1px solid #dce3e9;
+    background:#fff;
+    border-radius:10px;
+    color:#344054;
+    cursor:pointer;
+    font-size:12px;
+    transition:.25s;
+}
+
+.interest-btn:hover,
+.interest-btn.selected{
+    background:#e3f7f5;
+    border-color:#12a89f;
+    color:#087d76;
+}
+
+
+/* GENERATE BUTTON */
+
+.generate-btn{
+    width:100%;
+    padding:16px;
+    border:0;
+    border-radius:12px;
+    background:linear-gradient(135deg,#12a89f,#087d76);
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.generate-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(18,168,159,.25);
+}
+
+
+/* SIDE CARDS */
+
+.planner-side{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.smart-card,
+.check-card{
+    background:#fff;
+    border:1px solid #e5ebf0;
+    border-radius:20px;
+    padding:25px;
+}
+
+.smart-icon{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#e3f7f5;
+    border-radius:13px;
+    margin-bottom:15px;
+}
+
+.smart-card h3,
+.check-card h3{
+    font-family:Poppins,sans-serif;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+.smart-card p{
+    color:#7b8494;
+    font-size:13px;
+    line-height:1.7;
+}
+
+.check-item{
+    padding:11px 0;
+    border-bottom:1px solid #edf0f3;
+    color:#667085;
+    font-size:13px;
+}
+
+.check-item:last-child{
+    border-bottom:0;
+}
+
+.check-item span{
+    color:#12a89f;
+    font-weight:800;
+    margin-right:8px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .planner-container{
+        grid-template-columns:1fr;
+    }
+
+    .planner-side{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:650px){
+
+    .planner-header{
+        padding:45px 5% 35px;
+    }
+
+    .planner-header h1{
+        font-size:36px;
+    }
+
+    .planner-container{
+        padding:35px 5% 60px;
+    }
+
+    .planner-card{
+        padding:22px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .interest-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .planner-side{
+        display:flex;
+    }
+}

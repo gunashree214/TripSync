@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripSync | Plan Your Trip</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/planner.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            ✈️ <span>Trip</span>Sync
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="planner.html" class="active">Plan Trip</a>
+            <a href="saved-trips.html">My Trips</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="profile.html" class="signup-btn">
+                My Profile
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="planner-header">
+
+        <div>
+            <span>TRIP PLANNER</span>
+
+            <h1>
+                Plan your perfect
+                <span>journey.</span>
+            </h1>
+
+            <p>
+                Tell us about your trip and create a personalized
+                travel plan in minutes.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- PLANNER -->
+
+    <main class="planner-container">
+
+        <div class="planner-card">
+
+            <div class="planner-title">
+
+                <div class="planner-icon">
+                    ✈️
+                </div>
+
+                <div>
+                    <h2>Trip Details</h2>
+                    <p>Let's start with the basics.</p>
+                </div>
+
+            </div>
+
+
+            <!-- DESTINATION -->
+
+            <div class="form-group full">
+
+                <label for="plannerDestination">
+                    📍 Destination
+                </label>
+
+                <input
+                    type="text"
+                    id="plannerDestination"
+                    placeholder="Where do you want to go?"
+                >
+
+            </div>
+
+
+            <!-- DATES -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="startDate">
+                        📅 Start Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="startDate"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="endDate">
+                        📅 End Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="endDate"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- TRAVELERS + BUDGET -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="plannerTravelers">
+                        👥 Travelers
+                    </label>
+
+                    <select id="plannerTravelers">
+
+                        <option value="1">
+                            1 Traveler
+                        </option>
+
+                        <option value="2">
+                            2 Travelers
+                        </option>
+
+                        <option value="3">
+                            3 Travelers
+                        </option>
+
+                        <option value="4">
+                            4 Travelers
+                        </option>
+
+                        <option value="5">
+                            5 Travelers
+                        </option>
+
+                        <option value="6+">
+                            6+ Travelers
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="budget">
+                        💰 Budget
+                    </label>
+
+                    <select id="budget">
+
+                        <option value="budget">
+                            Budget Friendly
+                        </option>
+
+                        <option value="moderate">
+                            Moderate
+                        </option>
+
+                        <option value="premium">
+                            Premium
+                        </option>
+
+                        <option value="luxury">
+                            Luxury
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRAVEL STYLE -->
+
+            <div class="form-group">
+
+                <label>
+                    🌎 Travel Style
+                </label>
+
+                <div class="interest-grid">
+
+                    <button type="button" class="interest-btn">
+                        🏖️ Beaches
+                    </button>
+
+                    <button type="button" class="interest-btn">
+                        🏔️ Mountains
+                    </button>
+
+                    <button type="button" class="interest-btn">
+                        🌿 Nature
+                    </button>
+
+                    <button type="button" class="interest-btn">
+                        🏛️ History
+                    </button>
+
+                    <button type="button" class="interest-btn">
+                        🍴 Food
+                    </button>
+
+                    <button type="button" class="interest-btn">
+                        🎯 Adventure
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRAVEL PACE -->
+
+            <div class="form-group">
+
+                <label for="travelPace">
+                    ⚡ Travel Pace
+                </label>
+
+                <select id="travelPace">
+
+                    <option value="relaxed">
+                        Relaxed — Take it slow
+                    </option>
+
+                    <option value="balanced" selected>
+                        Balanced — A little of everything
+                    </option>
+
+                    <option value="packed">
+                        Packed — See as much as possible
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- SPECIAL REQUEST -->
+
+            <div class="form-group">
+
+                <label for="specialRequest">
+                    💬 Special Requirements
+                </label>
+
+                <textarea
+                    id="specialRequest"
+                    rows="4"
+                    placeholder="Anything you'd like us to consider?"
+                ></textarea>
+
+            </div>
+
+
+            <!-- GENERATE BUTTON -->
+
+            <button
+                type="button"
+                class="generate-btn"
+                onclick="generateTrip()"
+            >
+                ✨ Generate My Trip
+            </button>
+
+        </div>
+
+
+        <!-- SIDE INFORMATION -->
+
+        <aside class="planner-side">
+
+            <div class="smart-card">
+
+                <div class="smart-icon">
+                    ✨
+                </div>
+
+                <h3>Smart Planning</h3>
+
+                <p>
+                    TripSync will organize your journey based on
+                    your destination, interests, budget and travel pace.
+                </p>
+
+            </div>
+
+
+            <div class="check-card">
+
+                <h3>Your Trip Includes</h3>
+
+                <div class="check-item">
+                    <span>✓</span>
+                    Personalized itinerary
+                </div>
+
+                <div class="check-item">
+                    <span>✓</span>
+                    Daily activities
+                </div>
+
+                <div class="check-item">
+                    <span>✓</span>
+                    Budget planning
+                </div>
+
+                <div class="check-item">
+                    <span>✓</span>
+                    Packing suggestions
+                </div>
+
+                <div class="check-item">
+                    <span>✓</span>
+                    Destination recommendations
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ✈️ TripSync
+        </div>
+
+        <p>
+            Plan less. Explore more.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="planner.html">Plan Trip</a>
+            <a href="profile.html">Profile</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 TripSync. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/planner.js"></script>
+
+</body>
+
+</html>

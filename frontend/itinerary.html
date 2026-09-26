@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripSync | My Itinerary</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">✈ TripSync</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="planner.html">Plan Trip</a>
+        <a href="itinerary.html">Itinerary</a>
+    </div>
+</nav>
+
+
+<section class="itinerary-header">
+    <span>YOUR TRAVEL PLAN</span>
+    <h1>Trip <span>Itinerary</span></h1>
+    <p id="tripSummary">Your personalized travel plan</p>
+</section>
+
+
+<main class="itinerary-container">
+
+    <div class="trip-info">
+        <h2 id="tripDestination">Your Destination</h2>
+
+        <p id="tripDates"></p>
+        <p id="tripTravelers"></p>
+        <p id="tripBudget"></p>
+    </div>
+
+
+    <div class="itinerary-card">
+
+        <h2>🗓️ Your Itinerary</h2>
+
+        <div id="itineraryList"></div>
+
+    </div>
+
+
+    <button class="back-btn" onclick="location.href='planner.html'">
+        ✈ Plan Another Trip
+    </button>
+
+</main>
+
+
+<script src="js/itinerary.js"></script>
+
+</body>
+</html>
